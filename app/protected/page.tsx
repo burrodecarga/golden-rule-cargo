@@ -1,17 +1,20 @@
-import { redirect } from "next/navigation";
+import { redirect, } from "next/navigation"
 
-import { createClient } from "@/lib/supabase/server";
-import { InfoIcon } from "lucide-react";
-import { FetchDataSteps } from "@/components/tutorial/fetch-data-steps";
+import { createClient } from "@/lib/supabase/server"
+import { InfoIcon } from "lucide-react"
+import { FetchDataSteps } from "@/components/tutorial/fetch-data-steps"
+import { DeployButton } from "@/components/deploy-button"
 
 export default async function ProtectedPage() {
-  const supabase = await createClient();
 
-  const { data, error } = await supabase.auth.getClaims();
-  if (error || !data?.claims) {
-    redirect("/auth/login");
+  const supabase=await createClient()
+
+  const { data, error }=await supabase.auth.getClaims()
+  if (error||!data?.claims) {
+    redirect("/auth/login")
   }
 
+  console.log(data)
   return (
     <div className="flex-1 w-full flex flex-col gap-12">
       <div className="w-full">
@@ -29,8 +32,9 @@ export default async function ProtectedPage() {
       </div>
       <div>
         <h2 className="font-bold text-2xl mb-4">Next steps</h2>
+
         <FetchDataSteps />
       </div>
     </div>
-  );
+  )
 }
