@@ -1,9 +1,7 @@
 import { redirect, } from "next/navigation"
-
 import { createClient } from "@/lib/supabase/server"
 import { InfoIcon } from "lucide-react"
 import { FetchDataSteps } from "@/components/tutorial/fetch-data-steps"
-import { DeployButton } from "@/components/deploy-button"
 
 export default async function ProtectedPage() {
 

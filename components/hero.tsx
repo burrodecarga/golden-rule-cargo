@@ -1,6 +1,4 @@
 import Image from "next/image"
-import { NextLogo } from "./next-logo"
-import { SupabaseLogo } from "./supabase-logo"
 
 export function Hero() {
   return (
@@ -14,7 +12,7 @@ export function Hero() {
       <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
         The fastest way to build apps with{" "}
         <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
+          href="#"
           target="_blank"
           className="font-bold hover:underline"
           rel="noreferrer"
