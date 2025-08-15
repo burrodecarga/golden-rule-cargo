@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import "./globals.css"
-import Script from "next/script"
 import SideNav from "@/components/ui/dashboard/sidenav"
 
 const defaultUrl=process.env.VERCEL_URL
