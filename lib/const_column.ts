@@ -1,4 +1,44 @@
 export const STRING_COLUMNAS_SERVICIOS=
+    `
+id,
+activo,
+bol,
+broker,
+carga,
+chofer,
+chofer_id,
+created_at,
+despachador,
+destino,
+estatus_pago,
+estatus_servicio,
+fecha_carga,
+fecha_entrega,
+forma_de_pago,
+gasto_estimado,
+id,
+info_pago,
+millas,
+num_descargas,
+observaciones,
+orden,
+origen,
+peso,
+plataforma,
+pod,
+precio_de_servicio,
+precio_mano_de_obra,
+rc,
+ruta,
+tipo_de_carga,
+vehiculo,
+vehiculo_id,
+ano,
+dia_de_semana,
+semana
+`
+
+export const STRING_COLUMNAS_SERVICIOS_AND_RELATIONS=
     `id,
 activo,
 bol,
@@ -52,3 +92,4 @@ monto,
 servicio_id,
 tipo)
 `
+

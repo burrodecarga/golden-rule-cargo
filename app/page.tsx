@@ -1,9 +1,9 @@
-import SideNav from "@/components/ui/dashboard/sidenav"
+import Search from "@/components/search"
 
 export default function Home() {
+
+
   return (
-    <div>
-      SEccion
-    </div>
+    <div>HOME</div>
   )
 }
