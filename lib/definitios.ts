@@ -16,12 +16,7 @@ export type FormattedServiciosTable={
     chofer: string
     estatus_pago: string
     fecha_carga: string
-    name: string
-    email: string
-    image_url: string
-    total_invoices: number
-    total_pending: string
-    total_paid: string
+
 }
 
 export type ServicioField={

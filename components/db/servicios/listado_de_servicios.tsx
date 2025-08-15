@@ -10,7 +10,8 @@ export default async function ListadoDeServicios() {
 
     return (
         <>
-            <ServiciosTable servicios={data} /></>
+            <ServiciosTable servicios={data}
+            /></>
 
     )
 }

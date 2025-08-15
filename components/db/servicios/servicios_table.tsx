@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default async function ServiciosTable({
   servicios,
 }: {
-  servicios: FormattedServiciosTable[]
+  servicios: any
 }) {
   return (
     <div className="w-full">
@@ -18,7 +18,7 @@ export default async function ServiciosTable({
           <div className="inline-block min-w-full align-middle">
             <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
               <div className="md:hidden">
-                {servicios?.map((servicio) => (
+                {servicios?.map((servicio: any) => (
                   <div
                     key={servicio.id}
                     className="mb-2 w-full rounded-md bg-white p-4"
@@ -80,7 +80,7 @@ export default async function ServiciosTable({
                 </thead>
 
                 <tbody className="divide-y divide-gray-200 text-gray-900">
-                  {servicios.map((servicio) => (
+                  {servicios.map((servicio: any) => (
                     <tr key={servicio.id} className="group">
                       <td className="whitespace-nowrap bg-white py-5 pl-4 pr-3 text-sm text-black group-first-of-type:rounded-md group-last-of-type:rounded-md sm:pl-6">
                         <div className="flex items-center gap-3">
@@ -95,7 +95,7 @@ export default async function ServiciosTable({
                           <div className="flex-col">
                             <p>{servicio.orden}</p>
                             <p>{servicio.fecha_carga}</p>
-                            <Link href="/" className='text-blue-500'> ver detalles</Link>
+                            <Link href="/" className='text-b'> ver detalles</Link>
                           </div>
                         </div>
                       </td>
